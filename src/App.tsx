@@ -12,6 +12,7 @@ import ResortDetailPage from './pages/ResortDetailPage';
 import TripsPage from './pages/TripsPage';
 import TripDetailPage from './pages/TripDetailPage';
 import NewTripPage from './pages/NewTripPage';
+import Profile from './pages/Profile';
 
 const client = generateClient<Schema>();
 
@@ -165,6 +166,7 @@ function App() {
                 <Route path="/trips" element={<TripsPage />} />
                 <Route path="/trips/new" element={<NewTripPage />} />
                 <Route path="/trips/:id" element={<TripDetailPage />} />
+                <Route path="/profile" element={<Profile />} />
               </Routes>
             </main>
 
