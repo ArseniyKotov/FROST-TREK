@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+body {
+  @apply bg-gradient-to-b from-darker-bg to-dark-bg text-white min-h-screen;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.neon-border {
+  @apply border-2 border-neon-pink shadow-neon-pink;
+}
+
+.neon-border-blue {
+  @apply border-2 border-neon-blue shadow-neon-blue;
+}
+
+.neon-border-green {
+  @apply border-2 border-neon-green shadow-neon-green;
+}
+
+.neon-border-purple {
+  @apply border-2 border-neon-purple shadow-neon-purple;
+}
+
+.neon-text-pink {
+  @apply text-neon-pink;
+  text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF;
+}
+
+.neon-text-blue {
+  @apply text-neon-blue;
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+}
+
+.neon-text-green {
+  @apply text-neon-green;
+  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14;
+}
+
+.neon-text-purple {
+  @apply text-neon-purple;
+  text-shadow: 0 0 5px #BC13FE, 0 0 10px #BC13FE;
+}
+
+.neon-button {
+  @apply px-4 py-2 rounded-md transition-all duration-300 bg-transparent;
+}
+
+.neon-button-pink {
+  @apply neon-button border-neon-pink text-neon-pink hover:bg-neon-pink hover:bg-opacity-20 shadow-neon-pink;
+}
+
+.neon-button-blue {
+  @apply neon-button border-neon-blue text-neon-blue hover:bg-neon-blue hover:bg-opacity-20 shadow-neon-blue;
+}
+
+.neon-button-green {
+  @apply neon-button border-neon-green text-neon-green hover:bg-neon-green hover:bg-opacity-20 shadow-neon-green;
+}
+
+.neon-button-purple {
+  @apply neon-button border-neon-purple text-neon-purple hover:bg-neon-purple hover:bg-opacity-20 shadow-neon-purple;
+}
+
+.glass-card {
+  @apply bg-black bg-opacity-50 backdrop-blur-md rounded-lg p-6;
+}
